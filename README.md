@@ -105,6 +105,8 @@ python lightweight_push.py -c MyChannel --sbj "My State Message" --msg "This mes
 
 ```
 
+For all possible usage options, please refer to the help message of the Lightweight Push script.
+
 
 # Infrastructure
 
