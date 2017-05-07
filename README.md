@@ -6,7 +6,7 @@ Unlike some other push service providers, Lightweight Push offers you real end-t
 
 Lightweight Push uses channels to send your messages to different Android devices. The Android devices subscribe to the channels they want to receive the messages from. This allows you to send messages triggered by specific events to different devices. For example in a server context, a failed HDD is only interesting for people responsible for hardware issues, but a failed server is also interesting for people working on this server.
 
-Due to technical reasons, the subject and message size is at the moment limited to 1400 characters. In the near future this will change and a bigger size will be allowed.
+Due to technical reasons, the subject and message size is at the moment limited to 1400 characters. However, if you send a message that is larger than 1400 characters, it will be truncated and send to you. In the near future this will change and a bigger size will be allowed.
 
 
 # Installation and Configuration
@@ -114,7 +114,7 @@ The following image shows the used infrastructure:
 
 ![alertR Infrastructure Push](pics/infrastructure_push.jpg)
 
-Lightweight Push will encrypt your message with your shared secret and send it to the alertR Push Notification Service. The end-to-end encryption ensures that neither the alertR Push Notification Service nor the Google Firebase service is able to read your message. The message will be sent on a channel that you choose. The channel is used to be able to receive the same message on multiple devices you own or want to be able to receive the message. In order to prevent multiple uses of the same channel by different users and therefore collisions, the channel is linked to your alertr.de account. However, in the unlikely event that a collision occurs or an attacker is able to deduce your used channel, only devices that know your used secret are able to decrypt the message. This is shown in the infrastructure image as an example. An attacker subscribes for the channel "MyAlarm" that is used by another user. The message is encrypted with the secret "MySecret". But only the device using this secret is able to decrypt the message.
+Lightweight Push will encrypt your message with your shared secret and send it to the alertR Push Notification Service. The end-to-end encryption ensures that neither the alertR Push Notification Service nor the Google Firebase service is able to read your message. The message will be sent on a channel that you choose. The channel is used to be able to receive the same message on multiple devices you own or want to be able to receive the message. In order to prevent multiple uses of the same channel by different users and therefore collisions, the channel is linked to your alertr.de account. In the unlikely event that an attacker is able to deduce your used channel, only devices that know your used secret are able to decrypt the message. This is shown in the infrastructure image as an example. An attacker subscribes for the channel "MyAlarm" that is used by another user. The message is encrypted with the secret "MySecret". But only the device using this secret is able to decrypt the message.
 
 
 # Bugs and Feedback
