@@ -53,7 +53,7 @@ max_retries = 16
 
 ```
 
-The App settings screen looks like the following:
+In order to receive the messages on your Android devices, you have to install the [alertR Android App](https://play.google.com/store/apps/details?id=de.alertr.alertralarmnotification). The App settings screen looks like the following:
 
 ![Android App Settings](pics/android_app_settings.jpg)
 
