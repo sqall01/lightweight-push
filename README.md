@@ -8,7 +8,7 @@ Lightweight Push uses channels to send your messages to different Android device
 
 Due to technical reasons, the subject and message size is at the moment limited to 1400 characters. However, if you send a message that is larger than 1400 characters, it will be truncated and send to you. In the near future this will change and a bigger size will be allowed.
 
-You do not want to use some service on the Internet for this but host everything yourself? No problem, each component needed for to send push messages is Open Source.
+You do not want to use some service on the Internet for this but host everything yourself? No problem, each component needed to send push messages is Open Source.
 
 * [Push Server](https://github.com/sqall01/alertR-Push-Server)
 * [Android App](https://github.com/sqall01/alertR-Push-Android)
