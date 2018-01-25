@@ -122,6 +122,15 @@ The following image shows the used infrastructure:
 Lightweight Push will encrypt your message with your shared secret and send it to the alertR Push Notification Service. The end-to-end encryption ensures that neither the alertR Push Notification Service nor the Google Firebase service is able to read your message. The message will be sent on a channel that you choose. The channel is used to be able to receive the same message on multiple devices you own or want to be able to receive the message. In order to prevent multiple uses of the same channel by different users and therefore collisions, the channel is linked to your alertr.de account. In the unlikely event that an attacker is able to deduce your used channel, only devices that know your used secret are able to decrypt the message. This is shown in the infrastructure image as an example. An attacker subscribes for the channel "MyAlarm" that is used by another user. The message is encrypted with the secret "MySecret". But only the device using this secret is able to decrypt the message.
 
 
+# Support
+
+If you like this project you can help to support it by contributing to it. You can contribute by writing tutorials, creating and documenting exciting new ideas to use it, writing code for it, and so on.
+
+If you do not know how to do any of it, you can support me on [Patreon](https://www.patreon.com/sqall). Since services such as the push notification service have a monthly upkeep, the donation helps to keep these services free for everyone.
+
+[![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/sqall)
+
+
 # Bugs and Feedback
 
 For questions, bugs and discussion please use the [Github Issues](https://github.com/sqall01/lightweight-push/issues).
