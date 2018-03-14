@@ -515,39 +515,39 @@ if __name__ == '__main__':
 		elif error_code == ErrorCodes.NO_ERROR:
 			logging.info("Sending message successful.")
 			break
-		elif response["Code"] == ErrorCodes.DATABASE_ERROR:
+		elif error_code == ErrorCodes.DATABASE_ERROR:
 			logging.error("Database error on server side. Trying again.")
-		elif response["Code"] == ErrorCodes.AUTH_ERROR:
+		elif error_code == ErrorCodes.AUTH_ERROR:
 			logging.error("Authentication failed. "
 				+ "Check your credentials.")
 			exit(1, ca_file)
-		elif response["Code"] == ErrorCodes.ILLEGAL_MSG_ERROR:
+		elif error_code == ErrorCodes.ILLEGAL_MSG_ERROR:
 			logging.error("Illegal message was sent. "
 				+ "Please make sure to use the newest version. "
 				+ "If you do, please open an issue on "
 				+ "https://github.com/sqall01/lightweight-push")
 			exit(1, ca_file)
-		elif response["Code"] == ErrorCodes.GOOGLE_MSG_TOO_LARGE:
+		elif error_code == ErrorCodes.GOOGLE_MSG_TOO_LARGE:
 			logging.error("Transmitted message too large. "
 				+ "Please shorten it.")
 			exit(1, ca_file)
-		elif response["Code"] == ErrorCodes.GOOGLE_CONNECTION:
+		elif error_code == ErrorCodes.GOOGLE_CONNECTION:
 			logging.error("Connection error on server side. "
 				+ "Trying again.")
-		elif response["Code"] == ErrorCodes.GOOGLE_AUTH:
+		elif error_code == ErrorCodes.GOOGLE_AUTH:
 			logging.error("Authentication error on server side. "
 				+ "Trying again.")
-		elif response["Code"] == ErrorCodes.VERSION_MISSMATCH:
+		elif error_code == ErrorCodes.VERSION_MISSMATCH:
 			logging.error("Version mismatch. "
 				+ "Please update your client.")
 			exit(1, ca_file)
-		elif response["Code"] == ErrorCodes.NO_NOTIFICATION_PERMISSION:
+		elif error_code == ErrorCodes.NO_NOTIFICATION_PERMISSION:
 			logging.error("No permission to use notification channel. "
 				+ "Please update channel configuration.")
 			exit(1, ca_file)
 		else:
 			logging.error("The following error code occurred: %d."
-				% response["Code"]
+				% error_code
 				+ "Please make sure to use the newest version. "
 				+ "If you do, please open an issue on "
 				+ "https://github.com/sqall01/lightweight-push")
