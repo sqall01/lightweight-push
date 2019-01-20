@@ -86,6 +86,17 @@ MySuperSecretSharedSecret
 ```
 
 
+## Video
+
+A full video that shows how to set up Lightweight Push and use it is shown here:
+
+<div align="center">
+<a href="https://www.youtube.com/watch?feature=player_embedded&v=7UUJts7JsL0" target="_blank">
+<img src="https://img.youtube.com/vi/7UUJts7JsL0/0.jpg" width="640" height="480" border="10" />
+</a>
+</div>
+
+
 # Usage
 
 There are two ways to send a message with Lightweight Push. Either give the message directly via a command line argument or via pipe. To send a message via a command line argument, just type the following command:
@@ -114,15 +125,6 @@ python lightweight_push.py -c MyChannel --sbj "My State Message" --msg "This mes
 
 For all possible usage options, please refer to the help message of the Lightweight Push script.
 
-## Video
-
-A full video that shows how to set up Lightweight Push and use it is shown here:
-
-<div align="center">
-<a href="https://www.youtube.com/watch?feature=player_embedded&v=7UUJts7JsL0" target="_blank">
-<img src="https://img.youtube.com/vi/7UUJts7JsL0/0.jpg" width="640" height="480" border="10" />
-</a>
-</div>
 
 # Infrastructure
 
