@@ -22,7 +22,7 @@ Lightweight Push is written for Python 2 and 3. It needs the `lightweightpush` p
 
 ```bash
 
-pip --user install lightweightpush
+pip install --user lightweightpush
 
 ```
 
