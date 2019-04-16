@@ -323,6 +323,9 @@ if __name__ == '__main__':
         elif error_code == ErrorCodes.CLIENT_CONNECTION_ERROR:
             logging.error("Client could not create a connection to the "
                 + "server. Please check your Internet connection.")
+        elif error_code == ErrorCodes.WEB_BRIDGE_ERROR:
+            logging.error("Web bridge error on server side. "
+                + "Trying again.")
         else:
             logging.error("The following error code occurred: %d."
                 % error_code
